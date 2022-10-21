@@ -6,80 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모임이 쉬워진다 | BOND</title>
 
-    <link rel="stylesheet" href="meeting.css">
+    <link rel="stylesheet" href="css/meeting.css">
+    <script src="https://kit.fontawesome.com/1ce4f19a7a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <main>
         <header>
             <section>
                 <!-- 클릭 시 메인으로 이동하는 로고  -->
                 <a href="#">
                     <img src="../images/home-logo.png" id="home-logo">
                 </a>
-            </section>
 
-            <section class="profile">
+                <!-- 채팅 -->
+                <a href="#">
+                    <i class="fa-solid fa-comment-dots chat-icon"></i>
+                </a>
+
                 <!-- 내 정보 사진 -->
-                <button type="button" class="box">
+                <a href="#" class="box">
                     <img src="../images/profile-photo.png" id="profile-photo">
-                </button>
+                </a> 
             </section>
         </header>
 
-        
-    </main>    
-    
-    <nav class="bg">
-        <div id="list-nav">
-            <ul>
-                    <li><a href="#">게시글</a></li>
-                    <li><a href="#">사진첩</a></li>
-                    <li><a href="#">일정</a></li>
-                    <li><a href="#">멤버</a></li>
-                </ul>
-            </div>
+
+        <nav class="bg">
+            <div id="list-nav">
+                <ul>
+                        <li><a href="#">게시글</a></li>
+                        <li><a href="#">사진첩</a></li>
+                        <li><a href="#">일정</a></li>
+                        <li><a href="#">멤버</a></li>
+                    </ul>
+                </div>
         </nav>
-        
-        <aside id="info">
-            <div id="info-inner">
-                <div class="side-cover">
-                    <a href="#" class="cover">
-                        <img src="../teamproject/images/side-cover.png" class="cover-img">
-                    </a>
+            
+
+        <div id="container">
+            <!-- 1번 영역 -->
+            <aside id="info">
+                <div id="info-inner">
+                    <div class="side-cover">
+                        <a href="#" class="cover">
+                            <img src="images/side-cover.png" id="cover-img">
+                        </a>
+                    </div>
+
+                    <div class="band-name">
+                        <a href="#" class="uri-text">KH 팀프로젝트</a>
+                    </div>
+
+                    <p class="member">
+                        <a href="#" class="member-count">멤버 5</a>
+                    </p>
+
+                    <div class="band-info">
+                        <p class="band-description">KH 팀프로젝트 소개글입니다아아아아아아아아아
+                            아아아아아아아아아아아아아아-----------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                        </p>
+                        <a href="#" class="more-link">...더보기</a>
+                    </div>
+
+                    <div class="btn-box">
+                        <button type="button" class="write-button">글쓰기</button>
+                        <p class="box-desc">
+                            누구나 밴드를 검색해 찾을 수 있고, 밴드 소개와 게시글을 볼 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="band-setting">
+                        <a href="#" class="band-setting-link"> 
+                            <i class="fa-solid fa-gear"></i>밴드 설정
+                        </a>
+                    </div>
                 </div>
+            </aside>
 
-                <p class="member">
-                    <a href="#" class="member-count">멤버</a>
-                    <a href="#" class="member-invite">초대</a>
-                </p>
-
-                <div class="band-info">
-                    <p class="band-description"></p>
-                    <a href="#" class="more-link"></a>
+            <!-- 2번 영역 -->
+            <main id="board-list">
+                <div class="post-write-form">
+                    <button type="button" class="content-button"></button>
+                    <div class="content-editor">
+                        새로운 소식을 남겨보세요. <br>
+                        공개 밴드에 남긴 글은 누구나 볼 수 있습니다.
+                    </div>
+                    <div class="toolbar-area">
+                        <ul class="toolbar">
+                            <li class="toolbaritem">
+                                <i class="fa-solid fa-image board-icon"></i>
+                            </li>
+                            <li class="toolbaritem">
+                                <i class="fa-solid fa-check-to-slot board-icon"></i>
+                            </li>
+                            <li class="toolbaritem">
+                                <i class="fa-solid fa-divide board-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </main>
 
-                <div class="btn-box">
-                    <button type="button" ></button>
+            <!-- 3번 영역 -->
+            <div id="banner">
+                <div class="band-photo-area">
+                    사진첩
                 </div>
             </div>
-        </aside>
+        </div>
         
     <footer>
-        <p>
-            BOND &copy; 2022
-        </p>
-
-        <article>
-            <a href="#">블로그</a>
-            <span>|</span>
-            <a href="#">이용약관</a>
-            <span>|</span>
-            <a href="#">개인정보처리방침</a>
-            <span>|</span>
-            <a href="#">고객센터</a>
-        </article>
+        <section class="footer">
+            <p>
+                BOND &copy; 2022
+            </p>
+    
+            <article>
+                <a href="#">블로그</a>
+                <span>|</span>
+                <a href="#">이용약관</a>
+                <span>|</span>
+                <a href="#">개인정보처리방침</a>
+                <span>|</span>
+                <a href="#">고객센터</a>
+            </article>
+        </section>
 
     </footer>
 
