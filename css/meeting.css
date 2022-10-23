@@ -13,12 +13,13 @@ header{
     background-color: #737373;
 }
 
-section{
+.header-section{
     width: 1140px;
     height: 70px;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #home-logo{
@@ -26,17 +27,31 @@ section{
     margin-top: 8px;
 }
 
-.chat-icon{
-    font-size: 1.5em;
+.header-widget-area{
+    display: block;
+    margin-top: 8px;
 }
 
+.widget-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.chat-icon{
+    font-size: 1.35em;
+    margin-right: 6px;
+}
+
+
 .box {
-    border-color: none;
+    border: none;
     width: 40px;
     height: 40px;
     border-radius: 70%;
     overflow: hidden;
-    justify-content: right;
 }
 
 #profile-photo{
@@ -108,10 +123,12 @@ nav li > a:hover {
 
 /* side-bar */
 #info{
-    width: 250px;
+    width: 232px;
     padding-bottom: 20px;
     margin-right: 18px;
+    flex: 0 0 auto;
 }
+
 
 #side-cover{
    display: inline-block;
@@ -232,8 +249,9 @@ nav li > a:hover {
 
 /* board-list */
 #board-list{
-    width: 620px;
+    width: 632px;
     margin-bottom: 11px;
+    flex: 0 0 auto;
 }
 
 /* 글쓰기 영역 */
@@ -300,6 +318,91 @@ nav li > a:hover {
 .board-icon:hover{
     color: #555;
 }
+
+
+/* banner */
+#banner{
+    width: 258px;
+    flex: 0 0 auto;
+}
+
+.band-photo{
+    position: relative;
+    margin-bottom: 13px;
+
+    background-color:  white;
+}
+
+#banner .tit{
+    height: 34px;
+    padding-left: 14px;
+    padding-right: 14px;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    
+}
+
+#banner .photo-body{
+    padding: 14px;
+    border-top: 1px solid #f0f2f4;
+}
+
+#banner .photo-list{
+    margin-top: -1px;
+    margin-left: -1px;
+    font-size: 0;
+}
+
+#banner .photo-list a{
+    display: inline-block;
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    cursor: pointer;
+    aspect-ratio: auto 73 / 73;
+
+
+}
+
+#banner .photo-list .no-img{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background-color: #eef0f3;
+
+    margin-top: 1px;
+}
+
+
+
+.banner-box {
+    border: none;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+#banner .more-button{
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+#banner .more-button:hover{
+    text-decoration: underline;
+}
+
+
 
 
 /* footer */
