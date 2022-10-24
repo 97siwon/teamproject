@@ -406,21 +406,20 @@ nav li > a:hover {
 
 
 /* footer */
-.footer{
-    width: 1140px;
-    margin: auto;
+footer{
+    height: 200px;
+    background-color: #BFBFBF;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-footer{
-    background-color: #BFBFBF;
-}
 
 .footer > p{
     font-weight: 800;
     margin: 16px 0;
+    text-align: center;
 }
 
 .footer > article > *{
