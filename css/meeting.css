@@ -11,15 +11,25 @@
 /* Header */
 header{
     background-color: #737373;
+
 }
 
 .header-section{
     width: 1140px;
-    height: 70px;
+    height: 57px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 1000;
+
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #home-logo{
@@ -120,6 +130,7 @@ nav li > a:hover {
     height: 800px;
     margin: 20px auto;
     display: flex;
+    padding-top: 87px;
 }
 
 /* side-bar */
@@ -128,6 +139,8 @@ nav li > a:hover {
     padding-bottom: 20px;
     margin-right: 18px;
     flex: 0 0 auto;
+
+    position: fixed;
 }
 
 
