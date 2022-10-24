@@ -41,15 +41,15 @@ header{
 }
 
 .chat-icon{
-    font-size: 1.35em;
+    font-size: 1.3em;
     margin-right: 6px;
 }
 
 
 .box {
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 70%;
     overflow: hidden;
 }
