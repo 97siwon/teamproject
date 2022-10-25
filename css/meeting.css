@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
 }
 
-.fixed{
+.header-fixed{
     position: fixed;
     z-index: 1000;
 
@@ -75,34 +75,39 @@ header{
     cursor: pointer;
 } */
 
+
+
 body{
     background-color: #F2F2F2;
 }
 
 /* Nav */
 nav{
-    height: 30px;
-    position: sticky;
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    min-width: 1034px;
+    height: 35px;
+    left: 0;
+    top: 57px;
+    background-color: #8C8C8C;
+    text-align: center;
 }
 
-.bg{
-    background-color: #8C8C8C;
-}
 
 #list-nav > ul{
-    margin: 0;
-    padding: 0;
     list-style: none;
-
     display: flex;
-    height: 30px;
+    height: 35px;
     justify-content: center;
+    align-items: center;
 }
 
 nav li{
-    flex-basis: 150px;
 
+    margin: 0px 35px;
 }
+
 
 nav li > a{
     text-decoration: none;
@@ -111,13 +116,10 @@ nav li > a{
     font-weight: bold;
     color: white;
 
-    display: block;
-    height: 100%;
-
-    padding: 8px 0;
-    text-align: center;
-
     transition-duration: 0.1s;
+
+    
+    padding-bottom: 2px;
 }
 
 
@@ -128,9 +130,8 @@ nav li > a:hover {
 #container{
     width: 1140px;
     height: 800px;
-    margin: 20px auto;
     display: flex;
-    padding-top: 87px;
+
 }
 
 /* side-bar */
@@ -139,10 +140,17 @@ nav li > a:hover {
     padding-bottom: 20px;
     margin-right: 18px;
     flex: 0 0 auto;
-
-    position: fixed;
+    
 }
 
+#info-inner{
+    padding-top: 0px;
+    padding-bottom: 1px;
+    position: fixed;
+    transform: translateY(107px);
+    top: 0px;
+    width: 232px;
+}
 
 #side-cover{
    display: inline-block;
@@ -316,9 +324,26 @@ nav li > a:hover {
     cursor: pointer;
 }
 
-/* band-photo-area */
-.band-photo-area{
+
+/* banner */
+#banner{
+    width: 258px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    position: fixed;
+    transform: translateY(107px);
+    top: 0px;
+
     margin-left: 18px;
+
+
+}
+
+.band-photo-area{
+
+
+    width: 240px;
+   
 }
 
 .toolbar{
@@ -331,13 +356,6 @@ nav li > a:hover {
 
 .board-icon:hover{
     color: #555;
-}
-
-
-/* banner */
-#banner{
-    width: 258px;
-    flex: 0 0 auto;
 }
 
 .band-photo{
