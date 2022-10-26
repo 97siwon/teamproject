@@ -131,6 +131,13 @@ nav li > a:hover {
     width: 1140px;
     height: 800px;
     display: flex;
+    flex: 1 1 auto;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 108px 0 0;
+    align-items: flex-start;
+    
 
 }
 
@@ -139,18 +146,9 @@ nav li > a:hover {
     width: 232px;
     padding-bottom: 20px;
     margin-right: 18px;
-    flex: 0 0 auto;
     
 }
 
-#info-inner{
-    padding-top: 0px;
-    padding-bottom: 1px;
-    position: fixed;
-    transform: translateY(107px);
-    top: 0px;
-    width: 232px;
-}
 
 #side-cover{
    display: inline-block;
@@ -233,22 +231,33 @@ nav li > a:hover {
 }
 
 .band-setting{
-    display: flex;
     margin-top: 8px;
     padding-top: 9px;
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.band-setting-link{
+.band-setting-section{
+    display: flex;
     font-size: 12px;
-    font-weight: 400;
-    color: #555;
-    text-decoration: none;
+    align-items: center;
 }
 
-.band-setting-link:hover{
+.band-setting-list{
+    list-style: none;
+    display: contents;
+}
+
+/* .band-setting-link:hover{
     text-decoration: underline;
 }
+
+.report-band:hover{
+    text-decoration: underline;
+}
+
+.leave-band:hover{
+    text-decoration: underline;
+} */
 
 .fa-solid{
     color: #555;
@@ -328,15 +337,9 @@ nav li > a:hover {
 /* banner */
 #banner{
     width: 258px;
-    padding-top: 0px;
-    padding-bottom: 1px;
-    position: fixed;
-    transform: translateY(107px);
-    top: 0px;
+    display: flex;
 
     margin-left: 18px;
-
-
 }
 
 .band-photo-area{
@@ -447,6 +450,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    z-index: 10000;
 }
 
 
