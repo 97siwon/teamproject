@@ -248,6 +248,9 @@ nav li > a:hover {
     display: flex;
 }
 
+.leave-band{
+    padding-left: 5px;
+}
 
 /* .band-setting-link:hover{
     text-decoration: underline;
