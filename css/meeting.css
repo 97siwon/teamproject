@@ -52,7 +52,12 @@ header{
 
 .chat-icon{
     font-size: 1.2em;
-    margin-right: 15px;
+    margin-right: 14px;
+}
+
+.bell-icon{
+    font-size: 1.2em;
+    margin-right: 14px;
 }
 
 
@@ -243,9 +248,19 @@ nav li > a:hover {
     font-size: 12px;
 }
 
+.sidebar-font{
+    text-decoration: none;
+    color: #555;
+}
+
+
 .band-setting-item{
     list-style: none;
     display: flex;
+}
+
+.leave-band{
+    padding-left: 8px;
 }
 
 
@@ -345,10 +360,7 @@ nav li > a:hover {
 }
 
 .band-photo-area{
-
-
-    width: 240px;
-   
+    width: 240px; 
 }
 
 .toolbar{
@@ -411,12 +423,7 @@ nav li > a:hover {
     width: 68px;
     height: 68px;
     background-color: #eef0f3;
-
-    margin-top: 1px;
-    margin-right: 1px;
 }
-
-
 
 .banner-box {
     border: none;
