@@ -77,6 +77,25 @@ header{
     cursor: pointer;
 }
 
+.widget-item{
+    width: 50px;
+}
+
+.caret-icon{
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+label[for='header-menu-toggle']{
+    cursor: pointer;
+    display: flex;
+
+}
+
+label[for='header-menu-toggle']:hover{
+    text-decoration: underline;
+}
+
 #header-menu-toggle{
     display: none;
 }
@@ -91,12 +110,13 @@ header{
 
 #header-menu{
     position: absolute;
-    z-index: 500;
+    z-index: 1000;
     width: 100px;
-    height: 80px;
-    right: 0;
-    margin-top: 5px;
-    border: 1px solid black;
+    height: 75px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    opacity: 60%;
 }
 
 #header-menu > a{
@@ -104,10 +124,13 @@ header{
     height: 50%;
     justify-content: center;
     align-items: center;
+
+    text-decoration: none;
+    color: black;
 }
 
 #header-menu > a:first-child{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(155, 153, 153);
 }
 
 #header-menu > a:hover{
@@ -127,7 +150,7 @@ body{
 
 /* Nav */
 nav{
-    z-index: 10000;
+    z-index: 100;
     position: fixed;
     width: 100%;
     min-width: 1034px;
