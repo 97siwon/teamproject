@@ -39,7 +39,14 @@
                             <!-- 내 정보 사진 -->
                             <button type="button" class="box">
                                 <img src="images/profile-photo.png" id="profile-photo">
+                                <input type="checkbox" id="header-menu-toggle">
+                                <div id="header-menu">
+                                    <a href="#">내정보</a>
+                                    <a href="#">로그아웃</a>
+                                </div>
                             </button> 
+
+                            
                         </li>
                     </ul>
                 </div>
@@ -129,14 +136,13 @@
 
             <!-- 2번 영역 -->
             <main id="board-list">
-                <div class="post-write-form">
-
+                 <div class="post-write-form">
                     <div class="board-search">
                         <form action="#" class="search-form">
                             <div class="input-search-form">
-                                <label for="input-search" >글 내용, 작성자 검색</label>
+                                <label class="gSrOnly" for="input-search" >글 내용, 작성자 검색</label>
                                 <input type="text" id="input-search" placeholder="글 내용, 작성자 검색"
-                                  maxlength="20">
+                                 maxlength="20">
                                 <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
                             </div>
                         </form>
