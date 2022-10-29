@@ -52,19 +52,17 @@ header{
 
 .chat-icon{
     font-size: 1.2em;
-    margin-right: 14px;
 }
 
 .bell-icon{
     font-size: 1.2em;
-    margin-right: 14px;
 }
 
 
 .box {
     border: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
     overflow: hidden;
 }
@@ -86,15 +84,16 @@ header{
     padding-top: 10px;
 }
 
+.caret-icon:hover{
+    color: #999;
+}
+
 label[for='header-menu-toggle']{
     cursor: pointer;
     display: flex;
 
 }
 
-label[for='header-menu-toggle']:hover{
-    text-decoration: underline;
-}
 
 #header-menu-toggle{
     display: none;
@@ -113,10 +112,12 @@ label[for='header-menu-toggle']:hover{
     z-index: 1000;
     width: 100px;
     height: 75px;
-    margin-top: 30px;
     border: 1px solid #ccc;
-    background-color: #ccc;
-    opacity: 60%;
+    background-color: white;
+    border-radius: 14px;
+
+    top: 35px;
+    right: 8px;
 }
 
 #header-menu > a{
@@ -126,15 +127,17 @@ label[for='header-menu-toggle']:hover{
     align-items: center;
 
     text-decoration: none;
-    color: black;
+    color: #555;
+    font-size: 14px;
 }
 
 #header-menu > a:first-child{
-    border-bottom: 1px solid rgb(155, 153, 153);
+    border-bottom: 1px solid #ccc;
 }
 
 #header-menu > a:hover{
-    background-color: #455ba890;
+    color: #222;
+    font-weight: 600;
 
 }
 
