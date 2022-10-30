@@ -81,7 +81,7 @@ header{
 
 .caret-icon{
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .caret-icon:hover{
@@ -340,7 +340,7 @@ nav li > a:hover {
     text-decoration: underline;
 } */
 
-.fa-solid{
+.sidbar-icon{
     color: #555;
     margin-right: 5px;
 }
@@ -486,6 +486,31 @@ nav li > a:hover {
     cursor: pointer;
 }
 
+.post-wrap-title{
+    display: none;
+}
+
+.content-card{
+    margin-bottom: 11px;
+    position: relative;
+    background-color: white;
+}
+
+.post-author-view{
+    position: relative;
+    height: 65px;
+    background-color: transparent;
+    z-index: 11;
+    cursor: pointer;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+
+.uprofile{
+    margin-left: 22px;
+    margin-right: 10px;
+    z-index: 12;
+}
 
 /* banner */
 #banner{
@@ -584,7 +609,34 @@ nav li > a:hover {
     text-decoration: underline;
 }
 
+.btn-go-to-top{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}   
 
+.btn-go-to-top:hover{
+    background-color: #93D94E;
+}
+
+.go-to-top-icon{
+    font-size: 1.5em;
+    color: #555;
+}
+
+.go-to-top-icon:hover{
+    color: white;
+}
 
 
 /* footer */
