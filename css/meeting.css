@@ -153,7 +153,7 @@ body{
 
 /* Nav */
 nav{
-    z-index: 100;
+    z-index: 999;
     position: fixed;
     width: 100%;
     min-width: 1034px;
@@ -376,7 +376,7 @@ nav li > a:hover {
 .board-search{
     position: relative;
     margin-bottom: 12px;
-    z-index: 1000;
+    z-index: 995;
     
 }
 
