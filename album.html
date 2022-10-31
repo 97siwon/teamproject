@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모임이 쉬워진다 | BOND</title>
+
+    <link rel="stylesheet" href="css/album.css">
+    <script src="https://kit.fontawesome.com/1ce4f19a7a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <header class="header-fixed">
+            <section class="header-section">
+                <!-- 클릭 시 메인으로 이동하는 로고  -->
+                <a href="#">
+                    <img src="images/home-logo-white.png" id="home-logo">
+                </a>
+
+                <div class="header-widget-area">
+                    <ul class="widget-list">
+                        <li class="widget-item bell-icon">
+                            <!-- 알림 -->
+                            <a href="#">
+                                <i class="fa-solid fa-bell bell-icon"  style="color: #999;"></i>
+                            </a>
+                        </li>
+
+                        <li class="widget-item chat-icon">
+                            <!-- 채팅 -->
+                            <a href="#">
+                                <i class="fa-solid fa-comment-dots chat-icon" style="color: #999;"></i>
+                            </a>
+                        </li>
+
+                        <li class="widget-item">
+                            <!-- 내 정보 사진 -->
+                            <label for="header-menu-toggle">
+                                <button type="button" class="box">
+                                    <img src="images/profile-photo.png" id="profile-photo">
+                                </button> 
+                                
+                                <i class="fa-solid fa-caret-down caret-icon"></i>
+                                <input type="checkbox" id="header-menu-toggle">
+                                <div id="header-menu">
+                                    <a href="#">내정보</a>
+                                    <a href="#">로그아웃</a>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <nav class="bg nav-fixed">
+            <div id="list-nav">
+                <ul>
+                        <li><a href="#">게시글</a></li>
+                        <li><a href="#">사진첩</a></li>
+                        <li><a href="#">일정</a></li>
+                        <li><a href="#">멤버</a></li>
+                    </ul>
+            </div>
+        </nav>
+    
+            
+
+        <div id="container">
+            <!-- 1번 영역 -->
+            <aside id="info">
+                <div id="info-inner">
+                    <div class="side-cover">
+                        <a href="#" class="cover">
+                            <img src="images/side-cover.png" id="cover-img">
+                        </a>
+                    </div>
+
+                    <div class="band-name">
+                        <a href="#" class="uri-text">KH 팀프로젝트</a>
+                    </div>
+
+                    <p class="member">
+                        <a href="#" class="member-count">멤버 5</a>
+                    </p>
+
+                    <div class="band-info">
+                        <p class="band-description">KH 팀프로젝트 소개글입니다아아아아아아아아아
+                            아아아아아아아아아아아아아아-----------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                            ---------------------------------------------------------------------
+                        </p>
+                        <a href="#" class="more-link">...더보기</a>
+                    </div>
+
+                    <div class="btn-box">
+                        <button type="button" class="write-button">글쓰기</button>
+                        <p class="box-desc">
+                            누구나 밴드를 검색해 찾을 수 있고, 밴드 소개와 게시글을 볼 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="sidebar-under-icon">
+                        <div class="band-setting-section">
+                            <a href="#" class="band-setting-link sidebar-font"> 
+                                <i class="fa-solid fa-gear sidbar-icon"></i>밴드 설정
+                            </a>
+                            
+                        <div class="band-setting-list">
+                            <ul class="band-setting-item">
+                                <li>
+                                    <a href="#" class="report-band sidebar-font">
+                                        <i class="fa-solid fa-bell sidbar-icon"></i>신고하기
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="leave-band sidebar-font">
+                                        <i class="fa-solid fa-person-walking-arrow-right sidbar-icon"></i>탈퇴하기
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 2번 영역 -->
+            <main id="content">
+                <div class="album-section">
+                    <div class="header-wrap header-wrap-fixed">
+                        <div class="header-main">
+                            <h1 class="title">사진첩</h1>
+                            <div class="btn-wrap">
+                                <button type="button" class="create-album">앨범 만들기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="album-item-view">
+
+                    </div>
+
+                    <div class="album-wrap">
+
+                    </div>
+                </div>
+            </main>
+
+            <!-- 3번 영역 -->
+            <div id="banner">
+                <div class="band-photo-area">
+                    <section class="band-photo">
+                        <h2 class="tit">최근 사진</h2>
+                        <div class="photo-body">
+                            <div class="photo-list">
+                                <a href="#" class="banner-box">
+                                    <img src="images/banner.jpeg" class="banner-img">
+                                </a>
+                                <span class="no-img"></span>
+                                <span class="no-img"></span>
+                                <span class="no-img"></span>
+                                <span class="no-img"></span>
+                                <span class="no-img"></span>
+                            </div>
+                        </div>
+                        <a href="#" class="more-button">더보기</a>
+                    </section>
+                </div>
+            </div>
+
+            <a href="#">
+                <button type="button" class="btn-go-to-top">
+                    <i class="fa-solid fa-arrow-up go-to-top-icon"></i>
+                </button>
+             </a>
+        </div>
+        
+    <!-- <footer>
+            <p>
+                BOND &copy; 2022
+            </p>
+    
+            <article>
+                <a href="#">블로그</a>
+                <span>|</span>
+                <a href="#">이용약관</a>
+                <span>|</span>
+                <a href="#">개인정보처리방침</a>
+                <span>|</span>
+                <a href="#">고객센터</a>
+            </article>
+    </footer> -->
+
+</body>
