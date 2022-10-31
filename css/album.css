@@ -387,6 +387,19 @@ nav li > a:hover {
     font-weight: 600;
 }
 
+.btn-wrap{
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.create-album{
+    color: #93D94E;
+    overflow: hidden;
+    cursor: pointer;
+    border:1px solid #93D94E;
+}
+
 /* banner */
 #banner{
     width: 258px;
