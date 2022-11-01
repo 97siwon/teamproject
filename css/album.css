@@ -10,6 +10,7 @@
 
 a{
     text-decoration: none;
+    color: #222;
 }
 
 /* Header */
@@ -397,8 +398,55 @@ nav li > a:hover {
     color: #93D94E;
     overflow: hidden;
     cursor: pointer;
-    border:1px solid #93D94E;
 }
+
+.ubutton{
+    position: relative;
+    min-width: 90px;
+    height: 34px;
+    padding: 0 15px;
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: 500;
+    vertical-align: top;
+    white-space: nowrap;
+
+    border: 1px solid #93D94E;
+}
+
+.ubutton:hover{
+    border-color: #34cc6c;
+}
+
+.album-wrap{
+    padding: 0 22px 22px;
+}
+
+.album-header{
+    display: flex;
+    padding-top: 22px;
+    align-items: center;
+}
+
+.album-section .album-header .item:first-child{
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+}
+
+
+.album-section .album-header .item .title{
+    width: 100%;
+
+}
+
+.album-section .album-header .item .title a{
+    display: inline-flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+
 
 /* banner */
 #banner{
