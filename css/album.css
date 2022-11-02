@@ -13,6 +13,14 @@ a{
     color: #222;
 }
 
+em{
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
 /* Header */
 header{
     background-color: #737373;
@@ -349,13 +357,16 @@ nav li > a:hover {
 /* main */
 #content{
     width: 632px;
+    height: 100%;
     margin-bottom: 11px;
     flex: 0 0 auto;
+    background-color: white;
 }
 
 .album-section{
     position: relative;
     padding-bottom: 46px;
+    min-height: 100%;
 }
 
 .header-wrap{
@@ -446,6 +457,80 @@ nav li > a:hover {
     align-items: center;
 }
 
+.album-section .album-header .item .title a > strong{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+.album-section .album-header .item .title a > em{
+    margin-left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #777;
+}
+
+.album-section .album-header .info{
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+}
+
+.album-section .album-header .item:last-child{
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+
+.album-section .album-header .btn-attach-photo{
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.photo-plus{
+    font-size: 18px;
+}
+
+.album-section .album-header .btn-attach-photo span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.album-section .album-header .btn-attach-photo input{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.album-section .album-wrap .album-images{
+    margin-top: 12px;
+}
+
+.album-section .album-wrap .album-images .album{
+    float: left;
+    position: relative;
+    width: 196px;
+    height: 196px;
+    background-color: #ccc;
+}
 
 
 /* banner */
