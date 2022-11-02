@@ -495,11 +495,12 @@ nav li > a:hover {
     height: 18px;
     overflow: hidden;
     display: inline-block;
-
+    
 }
 
 .photo-plus{
     font-size: 18px;
+    cursor: pointer;
 }
 
 .album-section .album-header .btn-attach-photo span {
@@ -517,7 +518,6 @@ nav li > a:hover {
     width: 200%;
     height: 100%;
     opacity: 0;
-    cursor: pointer;
 }
 
 .album-section .album-wrap .album-images{
@@ -525,13 +525,36 @@ nav li > a:hover {
 }
 
 .album-section .album-wrap .album-images .album{
+    display: inline-block;
     float: left;
     position: relative;
-    width: 196px;
-    height: 196px;
+    width: 193px;
+    height: 193px;
+    margin-left: 2px;
     background-color: #ccc;
 }
+.album-section .album-wrap .album-images .album:nth-child(1n+4){
+    margin-top: 2px;
+}
 
+.album-section .album-wrap .album-images .album::after{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-color: 1px solid black;
+    content: '';
+
+}
+ .album-img{
+     width: 100%;
+     height: 100%;
+     border: 1px solid rgba(0,0,0,.05);
+     object-fit: cover;  
+ }
 
 /* banner */
 #banner{
