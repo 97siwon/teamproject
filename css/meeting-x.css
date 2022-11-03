@@ -179,21 +179,23 @@ nav li{
 
 nav li > a{
     text-decoration: none;
-    
     font-size: 15px;
     font-weight: bold;
-    color: white;
-
+    color: rgba(255,255,255,.8);
     transition-duration: 0.1s;
-
-    
     padding-bottom: 2px;
 }
 
 
-nav li > a:hover {
+nav li > a:focus {
     border-bottom: 2px solid white; 
+    color: #fff;
 }
+
+nav li > a:hover {
+    color: #fff; 
+}
+
 
 #container{
     width: 1140px;
@@ -219,9 +221,9 @@ nav li > a:hover {
 
 
 #side-cover{
-   display: inline-block;
-   position: relative;
-   vertical-align: top;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
 }
 
 
@@ -258,6 +260,20 @@ nav li > a:hover {
     color: black;
     font-size: 13px;
     font-weight: 500;
+}
+
+.share{
+    margin-top: 10px;
+}
+
+.share-address{
+    font-size: 12px;
+    font-weight: 600;
+    color: #5879ea;
+}
+
+.share-address:hover{
+    text-decoration: underline;
 }
 
 
@@ -299,9 +315,10 @@ nav li > a:hover {
     padding-left: 8px;
 }
 
-.sidbar-icon{
+.sidebar-under-icon{
     color: #555;
     margin-right: 5px;
+    margin-top: 11px;
 }
 
 .write-button{
