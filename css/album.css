@@ -559,9 +559,7 @@ nav li > a:hover {
 
 /* banner */
 #banner{
-    width: 258px;
     display: flex;
-
     margin-left: 18px;
 }
 
