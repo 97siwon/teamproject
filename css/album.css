@@ -207,7 +207,7 @@ nav li > a:hover {
 
 #container{
     width: 1140px;
-    height: 800px;
+    min-height: 800px;
     display: flex;
     flex: 1 1 auto;
     position: relative;
@@ -358,21 +358,18 @@ nav li > a:hover {
 /* main */
 #content{
     width: 632px;
-    height: 100%;
     margin-bottom: 11px;
     flex: 0 0 auto;
-    background-color: white;
 }
 
 .album-section{
     position: relative;
     padding-bottom: 46px;
-    min-height: 100%;
+    float: left;
 }
 
 .header-wrap{
     position: relative;
-    margin-bottom: 12px;
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding: 0 22px;
 }
@@ -431,12 +428,16 @@ nav li > a:hover {
 }
 
 .album-wrap{
+    width: 100%;
     padding: 0 22px 22px;
+    float: left;
+    background-color: white;
+    
 }
 
 .album-header{
     display: flex;
-    padding-top: 22px;
+    padding-top: 12px;
     align-items: center;
 }
 
@@ -525,8 +526,12 @@ nav li > a:hover {
     margin-top: 12px;
 }
 
+.album-section .album-wrap .album-images{
+    float: left;
+}
+
+
 .album-section .album-wrap .album-images .album{
-    display: inline-block;
     float: left;
     position: relative;
     width: 193px;
@@ -550,12 +555,47 @@ nav li > a:hover {
     content: '';
 
 }
- .album-img{
-     width: 100%;
-     height: 100%;
-     border: 1px solid rgba(0,0,0,.05);
-     object-fit: cover;  
- }
+.album-img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,.05);
+    object-fit: cover;  
+}
+
+.album-bottom{
+    float: left;
+    position: relative;
+    width: 123px;
+    height: 123px;
+    margin-left: 2px;
+    background-color: #ccc;
+}
+
+.album-wrap-line{
+    border-top: 1px solid rgba(0,0,0,.1) ;
+}
+
+.album-sort{
+    position: relative;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.album-sort .title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.album-list{
+    margin-top: 18px;
+}
+
+.album-item-view{
+    border-top: 1px solid rgba(0,0,0,.1) ;
+}
+
+
 
 /* banner */
 #banner{
