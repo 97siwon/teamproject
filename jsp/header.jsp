@@ -4,7 +4,7 @@
 <header class="header-fixed">
     <section class="header-section">
         <!-- 클릭 시 메인으로 이동하는 로고  -->
-        <a href="#">
+        <a href="/">
             <img src="images/home-logo-white.png" id="home-logo">
         </a>
 
@@ -25,19 +25,33 @@
                 </li>
 
                 <li class="widget-item">
-                    <!-- 내 정보 사진 -->
-                    <label for="header-menu-toggle">
-                        <button type="button" class="box">
-                            <img src="images/profile-photo.png" id="profile-photo">
-                        </button> 
+
+                    <c:choose>
+                        <%-- 로그인 X인 경우 --%>
+                        <c:when test="${empty sessionScope.loginMember}">
+                        <a href="/"> 메인 페이지 </a>
+                        |
+                        <a href="/member/login"> 로그인 </a>            
                         
-                        <i class="fa-solid fa-caret-down caret-icon"></i>
-                        <input type="checkbox" id="header-menu-toggle">
-                        <div id="header-menu">
-                            <a href="#">내정보</a>
-                            <a href="#">로그아웃</a>
-                        </div>
-                    </label>
+                        </c:when>
+
+                        <%-- 로그인 O인 경우 --%>
+                        <!-- 내 정보 사진 -->
+                        <c:otherwise>
+                        <label for="header-menu-toggle">
+                            <button type="button" class="box">
+                                <img src="images/profile-photo.png" id="profile-photo">
+                            </button> 
+                            
+                            <i class="fa-solid fa-caret-down caret-icon"></i>
+                            <input type="checkbox" id="header-menu-toggle">
+                            <div id="header-menu">
+                                <a href="#">내정보</a>
+                                <a href="#">로그아웃</a>
+                            </div>
+                        </label>
+                        </c:otherwise>
+                    </c:choose>
                 </li>
             </ul>
         </div>
@@ -54,3 +68,4 @@
             </ul>
     </div>
 </nav>
+    
