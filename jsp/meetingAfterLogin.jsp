@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,7 +149,7 @@
                             <div class="input-search-form">
                                 <label class="gSrOnly" for="input-search" >글 내용, 작성자 검색</label>
                                 <input type="text" id="input-search" placeholder="글 내용, 작성자 검색"
-                                 maxlength="20">
+                                    maxlength="20">
                                 <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
                             </div>
                         </form>
@@ -304,7 +307,7 @@
                 <button type="button" class="btn-go-to-top">
                     <i class="fa-solid fa-arrow-up go-to-top-icon"></i>
                 </button>
-             </a>
+            </a>
         </div>
         
     <!-- <footer>
