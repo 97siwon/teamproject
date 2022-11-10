@@ -194,17 +194,3 @@ nav li > a:focus {
 nav li > a:hover {
     color: #fff; 
 }
-
-#container{
-    width: 1140px;
-    height: 800px;
-    display: flex;
-    flex: 1 1 auto;
-    position: relative;
-
-    margin: 0 auto;
-    padding: 108px 0 0;
-    align-items: flex-start;
-    
-
-}
