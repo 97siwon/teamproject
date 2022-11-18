@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        헤더
+    </header>
+    <main>
+        <section class="left-side"></section>
+
+        <section class="center"></section>
+
+        <section class="right-side"></section>
+    </main>
+
+    <script>
+        const leftSide = document.querySelector(".left-side");
+        const rightSide = document.querySelector(".right-side");
+        const center = document.querySelector(".center");
+
+        const centerWidth = center.offsetWidth;
+        const leftSideWidth = leftSide.offsetWidth;
+        const righthideWidth = rightSide.offsetWidth;
+
+        window.addEventListener("load", function(){
+            leftSide.style.left = center.getBoundingClientRect().x - 10 - leftSideWidth + 'px';
+            rightSide.style.left = center.getBoundingClientRect().x + centerWidth + 10 + 'px';
+        });
+
+        window.addEventListener("resize", function() {
+            leftSide.style.left = center.getBoundingClientRect().x - 10 - leftSideWidth + 'px';
+            rightSide.style.left = center.getBoundingClientRect().x + centerWidth + 10 + 'px';
+        })
+
+    </script>
+</body>
+</html>

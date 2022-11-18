@@ -35,12 +35,11 @@ a{
     
 }
 
-
-#side-cover{
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
+#info-inner{
+    position: fixed;
+    width: 232px;
 }
+
 
 
 #cover-img{
@@ -168,11 +167,11 @@ a{
     width: 632px;
     margin-bottom: 11px;
     flex: 0 0 auto;
+    position: relative;
 }
 
 /* 글쓰기 영역 */
 .post-write-form{
-    position: relative;
     padding-bottom: 46px;
     
 }
@@ -483,11 +482,11 @@ button{
 /* banner */
 #banner{
     display: flex;
-
     margin-left: 18px;
 }
 
 .band-photo-area{
+    position: fixed;
     width: 240px; 
 }
 

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+
+    width: 100%;
+    
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+
+main{
+    width: 1020px;
+    min-height: 100vh;
+    margin: 10px auto;
+    position: relative;
+    border: none;
+    margin-top: 60px;
+}
+
+
+main > .left-side, main > .right-side{
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    top: 60px;
+}
+
+main > .center{
+    width: 600px;
+    height: 1000px;
+    margin: auto;
+}
+
+.left-side{
+    background-color: pink;
+    left: 0;
+}
+
+.right-side{
+    background-color: skyblue;
+    right: 0;
+}
+
+.center{
+    background: linear-gradient(0deg, Violet, Orange);
+}

@@ -280,7 +280,7 @@
 
             <!-- 3번 영역 -->
             <div id="banner">
-                <div class="band-photo-area">
+                <div id="band-photo-area">
                     <section class="band-photo">
                         <h2 class="tit">최근 사진</h2>
                         <div class="photo-body">
@@ -304,23 +304,26 @@
                 <button type="button" class="btn-go-to-top">
                     <i class="fa-solid fa-arrow-up go-to-top-icon"></i>
                 </button>
-             </a>
+            </a>
         </div>
         
-    <!-- <footer>
-            <p>
-                BOND &copy; 2022
-            </p>
-    
-            <article>
-                <a href="#">블로그</a>
-                <span>|</span>
-                <a href="#">이용약관</a>
-                <span>|</span>
-                <a href="#">개인정보처리방침</a>
-                <span>|</span>
-                <a href="#">고객센터</a>
-            </article>
-    </footer> -->
+        <!-- <script>
+            const leftSide = document.getElementById("info-inner");
+            const rightSide = document.getElementById("board-list");
+            const center = document.getElementById("band-photo-area");
 
+            const centerWidth = center.offsetWidth;
+            const leftSideWidth = leftSide.offsetWidth;
+            const righthideWidth = rightSide.offsetWidth;
+
+            window.addEventListener("load", function(){
+                leftSide.style.left = center.getBoundingClientRect().x - 18 - leftSideWidth + 'px';
+                rightSide.style.left = center.getBoundingClientRect().x + centerWidth + 10 + 'px';
+            });
+
+            window.addEventListener("resize", function() {
+                leftSide.style.left = center.getBoundingClientRect().x - 18 - leftSideWidth + 'px';
+                rightSide.style.left = center.getBoundingClientRect().x + centerWidth + 10 + 'px';
+            })
+        </script> -->
 </body>

@@ -219,10 +219,9 @@ nav li > a:hover {
 }
 
 
-#side-cover{
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
+#info-inner{
+    position: fixed;
+    width: 232px;
 }
 
 
@@ -355,7 +354,6 @@ nav li > a:hover {
 
 /* 글쓰기 영역 */
 .post-write-form{
-    position: relative;
     padding-bottom: 46px;
     
 }
@@ -670,8 +668,9 @@ button{
     margin-left: 18px;
 }
 
-.band-photo-area{
+#band-photo-area{
     width: 240px; 
+    position: fixed;
 }
 
 .toolbar{
