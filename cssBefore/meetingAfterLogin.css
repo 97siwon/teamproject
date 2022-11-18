@@ -426,6 +426,7 @@ nav li > a:hover {
 
 .main-content{
     position: relative;
+    margin-bottom: 55px;
 }
 
 .content-button{
@@ -471,9 +472,6 @@ nav li > a:hover {
     cursor: pointer;
 }
 
-.module-box{
-    margin-top: 55px;
-}
 
 .post-wrap-title{
     display: none;
